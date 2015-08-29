@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="registration" extends="struts-default">
+
+		<action name="u" class="com.sc.chris.action.UserAction">
+
+			<result name="success">/registerSuccess.jsp</result>
+			<result name="fail">/registerFail.jsp</result>			
+			<result name="list">/showAllUsers.jsp</result>
+			<result name="checkuser">/showUser.jsp</result>
+			<result name="getUserById">/showUser.jsp</result>
+		</action>
+		
+		<action name="showAllUser" class="com.sc.chris.action.ShowAllUserAction">
+			<result name="showUsers">/showAllUsers.jsp</result>
+		</action>
+	</package>
+
+</struts>
+	
